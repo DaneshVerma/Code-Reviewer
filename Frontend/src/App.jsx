@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import "prismjs/themes/prism-tomorrow.css";
 import prism from "prismjs";
-import "./App.css";
 import Editor from "react-simple-code-editor";
 import axios from "axios";
 import Markdown from "react-markdown";
@@ -32,8 +31,8 @@ function App() {
         <div className="left">
           <div className="code">
             <Editor
-              value={code}
-              onValueChange={(code) => setcode(code)}
+              value={code}    
+              onValueChange={(value) => setcode(value)}
               highlight={(code) =>
                 prism.highlight(code, prism.languages.javascript, "javascript")
               }
@@ -41,6 +40,7 @@ function App() {
               style={{
                 fontFamily: '"Fira code, "Fira Mono, monospace',
                 fontSize: 16,
+              
                 border: "1px solid #ddd",
                 borderRadius: "5px",
                 height: "100%",

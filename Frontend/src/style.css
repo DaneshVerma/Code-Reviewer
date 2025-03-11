@@ -12,49 +12,59 @@ body,
 }
 
 main {
+  background-color: #2b2b2b;
   height: 100%;
   width: 100%;
   padding: 1.5rem;
   display: flex;
   gap: 1rem;
 }
-
 main .left,
 main .right {
   height: 100%;
   flex-basis: 50%;
   border-radius: 0.7rem;
 }
-
 main .left {
-  background-color: black;
+  background-color: rgb(37, 37, 37);
   position: relative;
 }
-
-.left .code,
-.code pre,
-pre code {
+main .left .code {
+  height: 100%;
+  width: 100%;
+  caret-color: white;
+  font-weight: 500;
+}
+main .left .code pre {
   height: 100%;
   width: 100%;
   margin: 0;
   border-radius: 0.7rem;
-  background-color: #0c0c0c;
+  background-color: #2b2b2b;
+  color: whitesmoke;
 }
 main .left .review {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
   background-color: blanchedalmond;
-  color: black;
+  color: rgb(0, 0, 0);
   padding: 0.5rem 2rem;
   border-radius: 0.7rem;
   font-weight: 500;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
-
 main .right {
-  background-color: rgb(65, 64, 64);
+  background-color: rgb(29, 28, 28);
   padding: 1rem 2rem;
   overflow: auto;
+}
+
+@media (max-width: 410px) {
+  main {
+    flex-direction: column;
+  }
 }
