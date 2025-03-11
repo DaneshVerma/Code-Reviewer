@@ -1,14 +1,34 @@
+import React from 'react'
+import Markdown from "react-markdown";
+import rehypeHighlight from "rehype-highlight";
+import Editor from "react-simple-code-editor";
+import { useState, useEffect } from "react";
+import "prismjs/themes/prism-tomorrow.css";
+import prism from "prismjs";
+import axios from "axios";
 
-import { Route, Routes } from "react-router-dom";
-import ReviewPage from "./pages/ReviewPage";
-function App() {
- 
+import "highlight.js/styles/github-dark.css";
+const ReviewPage = () => {
+  const [code, setcode] = useState(`function sum(){
+    return 1+1
+  }`);
+    const [review, setReview] = useState("");
+  
+    useEffect(() => {
+      prism.highlightAll();
+    });
+  
+    async function reviewCode() {
+      const response = await axios.post("http://localhost:3000/ai/get-review", {
+        code,
+      });
+      console.log(response);
+  
+      setReview(response.data);
+    }
+  
   return (
-    <Routes>
-      <Route path="/"
-      element={<ReviewPage />} />
-     
-      {/* <main>
+    <main>
         <div className="left">
           <div className="code">
             <Editor
@@ -41,9 +61,8 @@ function App() {
         <div className="right">
           <Markdown rehypePlugins={rehypeHighlight}>{review}</Markdown>
         </div>
-      </main> */}
-    </Routes>
-  );
+      </main> 
+  )
 }
 
-export default App;
+export default ReviewPage
