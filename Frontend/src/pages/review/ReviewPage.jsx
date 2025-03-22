@@ -1,4 +1,5 @@
 import React from 'react'
+import "./review.css"
 import Markdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
 import Editor from "react-simple-code-editor";
@@ -6,7 +7,6 @@ import { useState, useEffect } from "react";
 import "prismjs/themes/prism-tomorrow.css";
 import prism from "prismjs";
 import axios from "axios";
-
 import "highlight.js/styles/github-dark.css";
 const ReviewPage = () => {
   const [code, setcode] = useState(`function sum(){
