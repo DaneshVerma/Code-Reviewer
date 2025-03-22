@@ -33,8 +33,14 @@
   border: none;
   color: whitesmoke;
   padding: 1rem;
-  background: black;
-  border-radius: 2rem;
+  background-color: transparent;
+  border: solid black 1px;
+  border-radius: 1rem;
+  transition: all ease-in-out 0.2s;
+}
+.start div .btn:hover {
+  cursor: pointer;
+  background-color: black;
 }
 
 @media (max-width: 410px) {

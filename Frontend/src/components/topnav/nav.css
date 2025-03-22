@@ -6,6 +6,12 @@
   justify-content: space-between;
   align-items: center;
 }
+.nav .logo {
+  height: 100%;
+}
+.nav .logo img {
+  height: 100%;
+}
 .nav .links {
   display: flex;
   gap: 1rem;
