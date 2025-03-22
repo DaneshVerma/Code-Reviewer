@@ -17,7 +17,6 @@ const ReviewPage = () => {
 
   useEffect(() => {
     prism.highlightAll();
-   
   }, []);
  
   async function reviewCode() {
@@ -55,6 +54,7 @@ const ReviewPage = () => {
                 borderRadius: "5px",
                 height: "100%",
                 width: "100%",
+                overflow:"auto"
               }}
             />
           </div>
