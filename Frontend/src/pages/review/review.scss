@@ -31,31 +31,7 @@ main {
     border-radius: 0.7rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    .code:focus {
-      box-shadow: 0 0 5px #4f46e5;
-    }
-    .code {
-      height: 100%;
-      width: 100%;
-      caret-color: white;
-      font-weight: 500;
-
-      ::placeholder{
-        padding-left: 1rem;
-      }
-      pre {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        border-radius: 0.7rem;
-        background-color: #2b2b2b;
-        color: whitesmoke;
-
-      }
-      textarea:focus {
-        outline: none; /* Removes the focus outline */
-      }
-    }
+    overflow: auto;
     .review {
       position: absolute;
       bottom: 1rem;
@@ -95,5 +71,8 @@ main {
 @media (max-width: 410px) {
   main {
     flex-direction: column;
+  }
+  .right{
+    font-size: 0.8rem;
   }
 }

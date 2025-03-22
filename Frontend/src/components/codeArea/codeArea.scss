@@ -1,0 +1,29 @@
+.code:focus {
+    box-shadow: 0 0 5px #4f46e5;
+  }
+  .code {
+    height: 100%;
+    width: 100%;
+    caret-color: white;
+    font-weight: 500;
+    ::placeholder{
+      padding-left: 1rem;
+    }
+    pre {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      border-radius: 0.7rem;
+      background-color: #2b2b2b;
+      color: whitesmoke;
+
+    }
+    textarea{
+      height: 100%;
+      overflow: auto;
+    }
+    textarea:focus {
+      outline: none; /* Removes the focus outline */
+    }
+  }
+

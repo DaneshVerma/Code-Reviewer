@@ -1,6 +1,6 @@
 import React from 'react'
 import './bottom.css'
-const Bottom = () => {
+const Footer = () => {
   return (
     <div className='bottom'>
       <p>developed & design By</p>
@@ -9,4 +9,4 @@ const Bottom = () => {
   )
 }
 
-export default Bottom
+export default Footer

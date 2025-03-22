@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./start.css";
 import Nav from "../../components/topnav/Nav";
-import Bottom from "../../components/bottomspan/Bottom";
+import Footer from "../../components/footer/Footer";
 const StartPage = () => {
   return (
     <>
@@ -20,7 +20,7 @@ const StartPage = () => {
           </Link>
         </div>
       </div>
-      <Bottom />
+      <Footer />
     </>
   );
 };
