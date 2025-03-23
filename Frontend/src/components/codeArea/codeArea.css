@@ -15,17 +15,21 @@
 .code ::placeholder {
   padding-left: 1rem;
 }
-.code pre {
+.code div {
+  min-height: 100%;
+}
+.code div pre {
   height: 100%;
   width: 100%;
   margin: 0;
   border-radius: 0.7rem;
   background-color: #2b2b2b;
   color: whitesmoke;
-}
-.code textarea {
   height: 100%;
 }
-.code textarea:focus {
+.code div textarea {
+  height: 100%;
+}
+.code div textarea:focus {
   outline: none; /* Removes the focus outline */
 }

@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 html,
@@ -13,11 +16,11 @@ body,
 
 main {
   background-color: #2b2b2b;
-  height: 90%;
+  height: 85%;
   width: 100%;
   padding: 1.5rem;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 main .left,
 main .right {
