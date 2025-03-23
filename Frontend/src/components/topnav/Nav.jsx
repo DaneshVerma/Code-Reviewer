@@ -7,9 +7,9 @@ const Nav = () => {
     <div className='nav'>
         <div className='logo'><img src="/src/assets/react.svg" alt="logo" /></div>
         <div className='links'>
-          <Link className='link'>Home</Link>
-          <Link className='link'>guide</Link>
-          <Link className='link'>about</Link>
+          <Link to={"/"} className='link'>Home</Link>
+          <Link to={"/guide"} className='link'>guide</Link>
+          <Link to={"/about"} className='link'>about</Link>
         </div>
     </div>
   )
