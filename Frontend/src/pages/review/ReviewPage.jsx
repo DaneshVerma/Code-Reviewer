@@ -14,32 +14,31 @@ const ReviewPage = () => {
   const [code, setcode] = useState(``);
   const [loading, setLoading] = useState(false);
 
-
   useEffect(() => {
     prism.highlightAll();
   }, []);
 
   const reviewCode = async () => {
-    setLoading(true); // Start loading
-    setReview("Reviewing");
+    setLoading(true); 
+    setReview("Let's See");
 
     let dots = 0;
     const interval = setInterval(() => {
       dots = (dots + 1) % 8;
       setReview(`Reviewing${".".repeat(dots)}`);
-    }, 500);
+    }, 1000);
 
     try {
-      const response = await axios.post("http://localhost:3000/ai/review", {
+      const response = await axios.post(import.meta.env.VITE_API_URL, {
         code,
       });
-      clearInterval(interval); // Stop dots animation
-      setReview(response.data); // Show actual review
+      clearInterval(interval); 
+      setReview(response.data);
     } catch (error) {
       clearInterval(interval);
       setReview("Failed to get review.");
     } finally {
-      setLoading(false); // ✅ Done loading
+      setLoading(false);
     }
   };
 
@@ -51,15 +50,17 @@ const ReviewPage = () => {
           <CodeArea code={code} setcode={setcode} />
           <div
             onClick={() => {
-              reviewCode();
+              if (!loading) {
+                reviewCode();
+              }
             }}
-            className="review-btn"
+            className={`review-btn ${loading ? "disable" : ""}`}
           >
-            Review
+            {loading ? "Reviewing.." : "Review"}
           </div>
         </div>
         <div id="right" className="right">
-          <ReviewArea review={review} />
+          <ReviewArea loading={loading} review={review} />
         </div>
       </main>
       <Footer />

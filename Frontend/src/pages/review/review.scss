@@ -50,6 +50,12 @@ main {
       background-color: #f5c879;
       transform: scale(101%);
     }
+    .disable {
+      background-color: gray;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+    
   }
   .right {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);

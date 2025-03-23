@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import Markdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
-const ReviewArea = ({ review }) => {
+import './reviewArea.css'
+const ReviewArea = ({ review, loading }) => {
   return (
-    <div>
-      <Markdown rehypePlugins={rehypeHighlight}>{review}</Markdown>
-    </div>
+    <>
+      {loading ? (
+        <div className="loading">{review}</div> // Optional: Add a spinner or text
+      ) : (
+        <div>
+          <Markdown rehypePlugins={rehypeHighlight}>{review}</Markdown>
+        </div>
+      )}
+    </>
   );
 };
 
