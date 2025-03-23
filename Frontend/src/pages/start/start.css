@@ -1,6 +1,6 @@
 .start {
   background-color: #2b2b2b;
-  height: 85%;
+  height: 80%;
   padding: 1.5rem;
 }
 .start div {
@@ -13,7 +13,7 @@
   gap: 2rem;
 }
 .start div .logo {
-  height: 10%;
+  height: 15%;
 }
 .start div .logo img {
   height: 100%;
@@ -40,7 +40,8 @@
 }
 .start div .btn:hover {
   cursor: pointer;
-  background-color: black;
+  background-color: #a3c0f2;
+  color: #082049;
 }
 
 @media (max-width: 410px) {
