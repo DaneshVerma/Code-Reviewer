@@ -19,15 +19,11 @@ const CodeArea = ({code, setcode}) => {
           }
           padding={10}
           style={{
-            height:"100%",
             outline: "none",
             fontFamily: '"Fira code, "Fira Mono, monospace',
             fontSize: 16,
             border: "0.1px solid #rgb(30 30 30)",
             borderRadius: "5px",
-            height: "100%",
-            width: "100%",
-            overflowY: "auto",
           }}
         />
       </div>

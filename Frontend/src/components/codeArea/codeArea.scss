@@ -6,6 +6,7 @@
     width: 100%;
     caret-color: white;
     font-weight: 500;
+    overflow: auto;
     ::placeholder{
       padding-left: 1rem;
     }
@@ -20,7 +21,6 @@
     }
     textarea{
       height: 100%;
-      overflow: auto;
     }
     textarea:focus {
       outline: none; /* Removes the focus outline */

@@ -7,6 +7,7 @@
   width: 100%;
   caret-color: white;
   font-weight: 500;
+  overflow: auto;
 }
 .code ::-moz-placeholder {
   padding-left: 1rem;
@@ -24,7 +25,6 @@
 }
 .code textarea {
   height: 100%;
-  overflow: auto;
 }
 .code textarea:focus {
   outline: none; /* Removes the focus outline */
