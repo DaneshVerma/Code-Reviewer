@@ -8,6 +8,7 @@ const GuidePage = () => {
       <Nav />
       <div className="hero">
         <h1>Guide Page</h1>
+        <p>Yet to complete!!</p>
       </div>
       <Footer />
     </>

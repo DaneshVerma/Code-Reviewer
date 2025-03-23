@@ -8,6 +8,7 @@ const AboutPage = () => {
       <Nav />
       <div className="hero">
         <h1>About Page</h1>
+        <p>Yet to be done!!</p>
       </div>
       <Footer />
     </>
