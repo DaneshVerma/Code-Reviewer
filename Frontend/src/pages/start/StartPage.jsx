@@ -10,7 +10,7 @@ const StartPage = () => {
       <div className="start">
         <div className="hero">
           <div className="logo">
-            <img src="/src/assets/react.svg" alt="" />
+            <img src="public/assets/react.svg" alt="" />
           </div>
           <h1>
             Welcome To <br className="new-line" /> code-view's
