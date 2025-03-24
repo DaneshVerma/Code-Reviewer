@@ -6,11 +6,13 @@ const userRoutes = require("./routes/user.routes");
 const cors = require("cors");
 const app = express();
 // connectToDB();
-app.use(cors({
-  origin: "http://localhost:5173", // For local testing
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL, // For local testing
     methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
     allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
-}));
+  })
+);
 app.use(express.json());
 
 app.get("/home", (req, res) => {
