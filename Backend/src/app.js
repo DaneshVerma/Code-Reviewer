@@ -2,10 +2,10 @@ const express = require("express");
 const aiRoutes = require("./routes/ai.routes");
 const userRoutes = require("./routes/user.routes");
 
-const connectToDB = require("../db/connect.db");
+// const connectToDB = require("../db/connect.db");
 const cors = require("cors");
 const app = express();
-connectToDB();
+// connectToDB();
 app.use(cors());
 app.use(express.json());
 
