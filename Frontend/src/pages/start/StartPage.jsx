@@ -4,7 +4,6 @@ import "./start.css";
 import axios from "axios";
 import Nav from "../../components/topnav/Nav";
 import Footer from "../../components/footer/Footer";
-import { response, set } from "../../../../Backend/src/app";
 const StartPage = () => {
   const [ready, setReady] = useState(false);
   const [info, setInfo] = useState("Please wait") 
