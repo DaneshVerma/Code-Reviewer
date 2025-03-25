@@ -7,21 +7,23 @@ import Footer from "../../components/footer/Footer";
 import { response, set } from "../../../../Backend/src/app";
 const StartPage = () => {
   const [ready, setReady] = useState(false);
-  const [info, setInfo] = useState("Please wait");
+  const [info, setInfo] = useState("Please wait") 
   async function connect() {
     try {
-      const response = await axios.get(import.meta.env.VITE_API_START_URL);
+      const response = await axios.get( import.meta.env.VITE_API_START_URL
+      );
       if (response.status == 200) {
         setReady(true);
       }
     } catch (error) {
-      console.log("server error " + response.status);
-      setInfo("!! Something went wrong try After sometime !!");
+      console.log("server error "+ response.status);
+      setInfo("!! Something went wrong try After sometime !!")
+
     }
   }
   useEffect(() => {
     connect();
-  }, []);
+  },[]);
   return (
     <>
       <Nav />
@@ -34,14 +36,8 @@ const StartPage = () => {
             Welcome To <br className="new-line" /> code-view's
           </h1>
           <Link to={"/review"} className="starter">
-            {ready ? (
-              <button className="btn">Let's Review</button>
-            ) : (
-              <h3 className="waiting">
-                Getting ready..! <br />
-                {info}
-              </h3>
-            )}
+          {ready?<button className="btn">Let's Review</button>: 
+           <h3 className="waiting">Getting ready..! <br />{info}</h3> }
           </Link>
         </div>
       </div>
