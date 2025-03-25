@@ -16,7 +16,7 @@ const StartPage = () => {
         setReady(true);
       }
     } catch (error) {
-      console.log("server error "+ response.status);
+      console.log("server error ");
       setInfo("!! Something went wrong try After sometime !!")
 
     }
