@@ -27,21 +27,31 @@
 .start div h1 br {
   display: none;
 }
-.start div .btn {
+.start div .starter {
+  height: 10%;
+  text-decoration: none;
+}
+.start div .starter .btn {
   font-weight: bold;
   font-size: larger;
   border: none;
   color: whitesmoke;
   padding: 1rem;
   background-color: transparent;
-  border: solid black 1px;
+  border: solid #a3c0f2 1px;
   border-radius: 1rem;
   transition: all ease-in-out 0.2s;
 }
-.start div .btn:hover {
+.start div .starter .btn:hover {
   cursor: pointer;
   background-color: #a3c0f2;
   color: #082049;
+}
+.start div .starter .waiting {
+  border: none;
+  color: gray;
+  pointer-events: none;
+  text-align: center;
 }
 
 @media (max-width: 410px) {

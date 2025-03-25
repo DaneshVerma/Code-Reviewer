@@ -1,10 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/connect", (req, res)=>{
-    setTimeout(() => {
-        res.status(200)
-    }, 2000);
-})
+router.get("/connect", (req, res) => {
+  res.send("ready").status(200);
+});
 
-module.exports=router;
+module.exports = router;

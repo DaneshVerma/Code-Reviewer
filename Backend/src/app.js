@@ -15,11 +15,8 @@ app.use(
 );
 app.use(express.json());
 
-app.get("/home", (req, res) => {
-  console.log("hellow world");
-});
 
-app.use('/', startRoutes)
+app.use('/home', startRoutes)
 app.use("/ai", aiRoutes);
 app.use("/user", userRoutes);
 

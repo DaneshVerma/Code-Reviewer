@@ -26,6 +26,10 @@
         display: none;
       }
     }
+    .starter{
+      height: 10%;
+      text-decoration: none;
+    
     .btn {
       font-weight: bold;
       font-size: larger;
@@ -33,7 +37,7 @@
       color: whitesmoke;
       padding: 1rem;
       background-color: transparent;
-      border: solid black 1px;
+      border: solid #a3c0f2 1px;
       border-radius: 1rem;
       transition: all ease-in-out 0.2s;
     }
@@ -42,6 +46,13 @@
       background-color: #a3c0f2;
       color: #082049;
     }
+    .waiting{
+      border: none;
+      color: gray;
+      pointer-events: none;
+      text-align: center;
+    }
+  }
   }
 }
 @media (max-width: 410px) {
