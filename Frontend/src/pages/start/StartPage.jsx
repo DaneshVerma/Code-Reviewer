@@ -16,7 +16,7 @@ const StartPage = () => {
       }
     } catch (error) {
       console.log("server error ");
-      setInfo("!! Something went wrong try After sometime !!")
+      setInfo("SOMETHING WENT WRONG !!")
 
     }
   }
@@ -29,7 +29,7 @@ const StartPage = () => {
       <div className="start">
         <div className="hero">
           <div className="logo">
-            <img src="/assets/react.svg" alt="" />
+            <img src="/assets/logo.svg" alt="" />
           </div>
           <h1>
             Welcome To <br className="new-line" /> code-view's
