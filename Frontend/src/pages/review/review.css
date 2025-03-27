@@ -75,7 +75,7 @@ main .right:hover {
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 410px) {
+@media (max-width: 550px) {
   main {
     flex-direction: column;
   }
