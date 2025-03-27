@@ -81,5 +81,9 @@ main .right:hover {
   }
   .right {
     font-size: 0.8rem;
+    height: 45% !important;
+  }
+  .left {
+    height: 45% !important;
   }
 }

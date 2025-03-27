@@ -55,7 +55,6 @@ main {
       pointer-events: none;
       cursor: not-allowed;
     }
-    
   }
   .right {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -79,7 +78,12 @@ main {
   main {
     flex-direction: column;
   }
-  .right{
+  .right {
     font-size: 0.8rem;
+    height:45% !important;
+
+  }
+  .left{
+    height: 45% !important;
   }
 }
