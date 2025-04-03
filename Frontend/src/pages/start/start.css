@@ -54,7 +54,7 @@
   text-align: center;
 }
 
-@media (max-width: 410px) {
+@media (max-width: 450px) {
   h1 br {
     display: inline;
   }

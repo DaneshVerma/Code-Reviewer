@@ -12,8 +12,8 @@ function App() {
       element={<StartPage />} />
       <Route path="/review"
       element={<ReviewPage />} />
-      <Route path="/guide"
-      element={<GuidePage />} />
+      {/* <Route path="/guide"
+      element={<GuidePage />} /> */}
       <Route path="/about"
       element={<AboutPage />} />
     </Routes>

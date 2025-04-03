@@ -8,7 +8,7 @@ const Nav = () => {
         <div className='logo'><Link to={'/'} ><img src="/assets/logo.svg" alt="logo" /></Link></div>
         <div className='links'>
           <Link to={"/"} className='link'>Home</Link>
-          <Link to={"/guide"} className='link'>guide</Link>
+          {/* <Link to={"/guide"} className='link'>guide</Link> */}
           <Link to={"/about"} className='link'>about</Link>
         </div>
     </div>
