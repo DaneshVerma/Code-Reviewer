@@ -7,7 +7,7 @@ const AboutPage = () => {
     <>
       <Nav />
       <div className="about-hero">
-        <div className="box"><a href=""><img src="/assets/Devimg.webp." alt="my-image" loading="eager" /></a></div>
+        <div className="box"><a href=""><img src="/assets/Devimg.webp" alt="my-image" loading="eager" /></a></div>
         <hr />
         <div className="content">
           <div className="pro">
